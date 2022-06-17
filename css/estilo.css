@@ -1,0 +1,159 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  margin: 0;
+}
+
+#container{
+  padding: 3% 10%;
+  margin: auto;
+  text-align: center;
+}
+
+.cabecalho-geral{
+  background-image: url("../imagens/topo.jpg");
+  height: 600px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-menu{
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+  clear: both;
+  overflow: auto;
+  padding-right: 20px;
+}
+
+.img-logo{
+  float: left;
+  margin-left: 13%;
+  margin-top: 9px;
+}
+
+.nav-menu ul{
+  float: right;
+  list-style: none;
+}
+
+.nav-menu ul li a{
+  text-decoration: none;
+  color: rgb(121, 121, 121);
+  transition: color;
+  transition-duration: 1s;
+}
+
+.nav-menu ul li a:hover{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.nav-menu ul li{
+  display: inline;
+  margin-right: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.section-conteudo{
+  width: 70%;
+  margin: auto;
+  line-height: 30px;
+  margin-top:70px;
+  clear: both;
+  overflow: auto;
+}
+
+.section-conteudo h2{
+  font-size: 35px;  
+}
+
+.div-foto img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.div-foto{
+  width: 32%;
+  float: left;
+  margin-top: 55px;
+}
+
+.div-foto-3{
+  float: right;
+}
+
+.div-foto-2{
+  margin-left: 2%;
+}
+
+.section-resumo{
+  clear: both;
+}
+
+.div-foto p{
+  margin: 0;
+  color: rgb(122, 119, 119);
+  padding-top: 13px;
+}
+
+.div-foto p strong{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgb(70, 63, 63);
+}
+
+.section-resumo{
+  background-image: url(../imagens/bg_detalhe.png);
+  height: 620px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+  background-color: rgb(1, 61, 82);
+  color: white;
+
+  padding: 10% 10%;
+  text-align: left;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+
+.section-resumo h1{
+  font-size: 48px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.section-resumo article{
+  line-height: 28px;
+  width: 60%;
+  margin-top: 40px;
+}
+
+.section-mapa header{
+  text-transform: uppercase;
+  color: rgb(2, 61, 79);
+  font-size: 13px;
+  padding: 25px;
+}
+
+.div-mapa{
+  height: 450px;
+}
+
+
+footer{
+  background-color: black;
+  color: rgb(71, 135, 119);
+  margin-top: 40px;
+  height: 60px;
+}
+
+footer p{
+  margin: 0;
+  padding-top: 23px;
+  letter-spacing: 5px;
+  font-size: 12px;
+}
