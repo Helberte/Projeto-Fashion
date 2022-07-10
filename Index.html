@@ -20,15 +20,25 @@
       <header class="cabecalho-geral">
         <nav class="nav-menu">
           <img class="img-logo" src="imagens/logo.png" alt="logo do site faschion">
-          <ul>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+
+          <div class="mobile-menu" onclick="addClassActiveMenuMobile();">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+
+          <ul class="ul-mobile-menu">
+            <li><a href="#section-portfolio" onclick="addClassActiveMenuMobile();">Portfolio</a></li>
+            <li><a href="#section-resumo" onclick="addClassActiveMenuMobile();">About Us</a></li>
+            <li><a href="#section-map" onclick="addClassActiveMenuMobile();">Contact</a></li>
           </ul>
         </nav>
       </header>
+
       <main id="conteudo-principal">
-        <section class="section-conteudo">
+
+        <!-- section-portfolio -->
+        <section id="section-portfolio" class="section-conteudo">
           <h2>New Fashion Everything Never Enough</h2>
 
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -64,7 +74,8 @@
           </div>
         </section>
 
-        <section class="section-resumo">
+        <!-- sessão resumo -->
+        <section id="section-resumo" class="section-resumo">
           <h1>Everything Never Enough <br>
             Just Fashion</h1>
 
@@ -83,7 +94,8 @@
         </section>
       </main>
 
-      <section class="section-mapa">
+      <!-- sessão mapa -->
+      <section id="section-map" class="section-mapa">
         <header>
           <h2>Call me now for design <br>
             012-1234-4567</h2>
@@ -107,5 +119,6 @@
       </footer>
     </div>
 
+    <script src="js/script.js"></script>
   </body>
 </html>

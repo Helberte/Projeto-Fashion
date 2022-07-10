@@ -1,9 +1,14 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
   margin: 0;
 }
-
+ 
 #container{
   padding: 3% 10%;
   margin: auto;
@@ -32,6 +37,18 @@ body{
   margin-top: 9px;
 }
 
+.cabecalho-geral .mobile-menu{
+  height: 30px;
+  width: 30px;
+  float: right;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.cabecalho-geral .mobile-menu .item{
+  height: 3px;
+  background-color: white;
+}
 .nav-menu ul{
   float: right;
   list-style: none;
@@ -107,7 +124,7 @@ body{
 
 .section-resumo{
   background-image: url(../imagens/bg_detalhe.png);
-  height: 620px;
+  min-height: 620px;
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: auto;
@@ -156,4 +173,93 @@ footer p{
   padding-top: 23px;
   letter-spacing: 5px;
   font-size: 12px;
+}
+
+/* RESPONSIVO*/
+
+@media(max-width:1027px){
+  .section-conteudo{
+    width: 90%;
+  }
+}
+
+@media(max-width:940px){
+  .section-resumo h1{
+    font-size: 30px;
+  }
+}
+
+@media(max-width: 890px){
+  .section-conteudo{
+    width: 100%;
+  }
+
+  /* MOBILE MENU */
+
+  .cabecalho-geral .mobile-menu{
+    display: flex;
+  }
+
+  .nav-menu ul{
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: 10;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all .4s ease;
+
+   
+    transform: translateX(100%);
+  }
+  .nav-menu ul li{
+    margin: 0;
+  }
+  .cabecalho-geral .mobile-menu{
+    margin-top: 5px;
+    position: relative;
+    z-index: 200;
+  }
+}
+@media(max-width: 830px){
+  .section-conteudo  .div-foto{
+    float: none;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .section-conteudo  .div-foto img{
+    width: 60%;
+    margin: auto;
+  }
+  .section-conteudo  .div-foto-1{
+    margin-top: 33px;
+  }
+  .section-conteudo  .div-foto-2{
+    margin-left: 0;
+  }
+  .section-resumo h1{
+    font-size: 25px;
+  } 
+}
+@media(max-width: 500px){
+  .section-resumo article{
+    width: 100%;
+  }
+}
+.ul-mobile-menu.active{
+  transform: translateY(0);
+
+}
+#container.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
 }
