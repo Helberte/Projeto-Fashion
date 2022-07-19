@@ -48,6 +48,8 @@ body{
 .cabecalho-geral .mobile-menu .item{
   height: 3px;
   background-color: white;
+
+  transition: all .3s ease;
 }
 .nav-menu ul{
   float: right;
@@ -211,7 +213,7 @@ footer p{
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     transition: all .4s ease;
 
@@ -262,4 +264,22 @@ footer p{
   position: fixed;
   top: 0;
   left: 0;
+}
+
+/* MENU SE TORNA X */
+
+.nav-menu .mobile-menu .item-1.animation{
+  transform: rotate(-47deg);
+  position: relative;
+  top: 8.6px;
+  width: 35px;
+}
+.nav-menu .mobile-menu .item-2.animation{
+  opacity: 0;
+}
+.nav-menu .mobile-menu .item-3.animation{
+  transform: rotate(48deg);
+  position: relative;
+  bottom: 7px;
+  width: 35px;
 }
